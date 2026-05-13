@@ -41,32 +41,40 @@
       padding: 20px;
       color: gray;
     }
+
+    .dashboard-btn {
+      text-decoration: none;
+      color: white;
+    }
   </style>
 </head>
 
 <body>
 
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
 
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
         ERP Portal
       </a>
 
       <div class="navbar-nav">
-        <a class="nav-link active" href="#">Home</a>
-        <a class="nav-link" href="#">Finance</a>
-        <a class="nav-link" href="#">Sales</a>
-        <a class="nav-link" href="#">CRM</a>
-        <a class="nav-link" href="#">Production</a>
-        <a class="nav-link" href="#">Supply Chain</a>
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="finance.html">Finance</a>
+        <a class="nav-link" href="sales.html">Sales</a>
+        <a class="nav-link" href="crm.html">CRM</a>
+        <a class="nav-link" href="production.html">Production</a>
+        <a class="nav-link" href="supply-chain.html">Supply Chain</a>
       </div>
 
     </div>
   </nav>
 
+  <!-- Main -->
   <div class="container">
 
+    <!-- Hero -->
     <div class="hero">
       <h1>Enterprise Resource Planning Dashboard</h1>
 
@@ -75,8 +83,10 @@
       </p>
     </div>
 
+    <!-- Dashboard Cards -->
     <div class="row mt-5">
 
+      <!-- Finance -->
       <div class="col-md-4 mb-4">
         <div class="card shadow p-4">
 
@@ -86,13 +96,14 @@
             Revenue, expenses, and profitability analytics.
           </p>
 
-          <button class="btn btn-primary">
+          <a href="finance.html" class="btn btn-primary dashboard-btn">
             View Dashboard
-          </button>
+          </a>
 
         </div>
       </div>
 
+      <!-- Sales -->
       <div class="col-md-4 mb-4">
         <div class="card shadow p-4">
 
@@ -102,13 +113,14 @@
             Lead generation and conversion tracking.
           </p>
 
-          <button class="btn btn-success">
+          <a href="sales.html" class="btn btn-success dashboard-btn">
             View Dashboard
-          </button>
+          </a>
 
         </div>
       </div>
 
+      <!-- CRM -->
       <div class="col-md-4 mb-4">
         <div class="card shadow p-4">
 
@@ -118,9 +130,43 @@
             Customer satisfaction and retention monitoring.
           </p>
 
-          <button class="btn btn-warning">
+          <a href="crm.html" class="btn btn-warning dashboard-btn">
             View Dashboard
-          </button>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Production -->
+      <div class="col-md-6 mb-4">
+        <div class="card shadow p-4">
+
+          <h3>Production</h3>
+
+          <p>
+            Factory output and uptime analytics.
+          </p>
+
+          <a href="production.html" class="btn btn-danger dashboard-btn">
+            View Dashboard
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Supply Chain -->
+      <div class="col-md-6 mb-4">
+        <div class="card shadow p-4">
+
+          <h3>Supply Chain</h3>
+
+          <p>
+            Inventory, supplier, and delivery performance metrics.
+          </p>
+
+          <a href="supply-chain.html" class="btn btn-dark dashboard-btn">
+            View Dashboard
+          </a>
 
         </div>
       </div>
@@ -129,6 +175,7 @@
 
   </div>
 
+  <!-- Footer -->
   <footer>
     ERP Business Intelligence Dashboard © 2026
   </footer>
