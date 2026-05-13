@@ -1,0 +1,21 @@
+<h2>Finance Dashboard</h2>
+
+<table border="1" cellpadding="10">
+  <thead>
+    <tr>
+      <th>Month</th>
+      <th>Revenue</th>
+      <th>Expenses</th>
+      <th>Profit</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let item of financeData">
+      <td>{{ item.Month }}</td>
+      <td>{{ item.Revenue }}</td>
+      <td>{{ item.Expenses }}</td>
+      <td>{{ item.Profit }}</td>
+    </tr>
+  </tbody>
+</table>
